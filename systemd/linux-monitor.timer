@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Linux System Monitor Every 5 Minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=linux-monitor.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
